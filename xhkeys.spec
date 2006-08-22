@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications 
 Source0:	http://www.geocities.com/wmalms/%{name}-%{version}.tar.gz
 # Source0-md5:	412f498f833d5e07673261afa3d903bf
+Patch0:		%{name}-DESTDIR.patch
 URL:		http://wmalms.tripod.com
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -58,6 +59,7 @@ Pakiet zawiera narzêdzie do konfiguracji.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
@@ -67,8 +69,10 @@ Pakiet zawiera narzêdzie do konfiguracji.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	LDCONFIG=true
-%{__make} install_doc
+	LDCONFIG=true \
+	DESTDIR=$RPM_BUILD_ROOT
+%{__make} install_doc \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
