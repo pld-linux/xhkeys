@@ -79,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc XHkeys.sample manual.html
+%doc CHANGES XHkeys.sample manual.html
 %attr(755,root,root) %{_bindir}/xhkeys
 %attr(755,root,root) %{_bindir}/xhkconf
 %dir %{_libdir}/xhkeys
