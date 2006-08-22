@@ -1,0 +1,39 @@
+--- xhkeys-2.2.1/Makefile.in.orig	2004-07-02 01:27:01.000000000 +0200
++++ xhkeys-2.2.1/Makefile.in	2006-08-22 13:35:20.332182000 +0200
+@@ -87,26 +87,26 @@
+ # install: install_bin install_doc
+ 
+ install:
+-	$(INSTALL) -m755 -d $(BINDIR)
+-	$(INSTALL) -s -m755 xhkeys $(BINDIR)
+-	$(INSTALL) -s -m755 xhkconf $(BINDIR)
++	$(INSTALL) -m755 -d $(DESTDIR)$(BINDIR)
++	$(INSTALL) -s -m755 xhkeys $(DESTDIR)$(BINDIR)
++	$(INSTALL) -s -m755 xhkconf $(DESTDIR)$(BINDIR)
+ ifeq "$(ENABLE_PLUGINS)" "yes"
+-	$(INSTALL) -m755 -d $(PLUGINDIR)
++	$(INSTALL) -m755 -d $(DESTDIR)$(PLUGINDIR)
+ ifeq "$(ENABLE_CDAUDIO)" "yes"
+-	$(INSTALL) -s -m755 $(CDAUDIO) $(PLUGINDIR)
++	$(INSTALL) -s -m755 $(CDAUDIO) $(DESTDIR)$(PLUGINDIR)
+ endif    
+ ifeq "$(ENABLE_MIXER)" "yes"
+-	$(INSTALL) -s -m755 $(MIXER) $(PLUGINDIR)
++	$(INSTALL) -s -m755 $(MIXER) $(DESTDIR)$(PLUGINDIR)
+ endif    
+ 	$(LDCONFIG) $(LIBDIR)
+ 	$(LDCONFIG) $(PLUGINDIR) 
+ endif	    
+ 
+ install_doc:
+-	$(INSTALL) -m755 -d $(DOCDIR)
+-	$(INSTALL) -m744 manual.html $(DOCDIR)
+-	$(INSTALL) -m744 XHkeys.sample $(DOCDIR)
+-	$(INSTALL) -m744 xhkeys.lsm $(DOCDIR)
++	$(INSTALL) -m755 -d $(DESTDIR)$(DOCDIR)
++	$(INSTALL) -m744 manual.html $(DESTDIR)$(DOCDIR)
++	$(INSTALL) -m744 XHkeys.sample $(DESTDIR)$(DOCDIR)
++	$(INSTALL) -m744 xhkeys.lsm $(DESTDIR)$(DOCDIR)
+ 
+ 
+ xhkeys.dep:  $(patsubst %.o,%.c, $(MODULES_XHKEYS))
