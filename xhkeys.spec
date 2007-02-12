@@ -1,5 +1,5 @@
 Summary:	xhkeys - a tool for assigning various actions to unused keys in X
-Summary(pl.UTF-8):   xhkeys - narzędzie do przypisywania nieużywanym klawiszom różnych akcji
+Summary(pl.UTF-8):	xhkeys - narzędzie do przypisywania nieużywanym klawiszom różnych akcji
 Name:		xhkeys
 Version:	2.2.1
 Release:	1
