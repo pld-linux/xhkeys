@@ -1,5 +1,5 @@
 Summary:	xhkeys - a tool for assigning various actions to unused keys in X
-Summary(pl):	xhkeys - narzêdzie do przypisywania nieu¿ywanym klawiszom ró¿nych akcji
+Summary(pl.UTF-8):   xhkeys - narzÄ™dzie do przypisywania nieuÅ¼ywanym klawiszom rÃ³Å¼nych akcji
 Name:		xhkeys
 Version:	2.2.1
 Release:	1
@@ -35,27 +35,27 @@ Features:
 
 The package includes configuration utility.
 
-%description -l pl
-Ta aplikacja zosta³a zaprojektowana z my¶l± o ka¿dej klawiaturze,
-która ma dodatkowe klawisze normalnie nieprzydatne w systemie X Window
+%description -l pl.UTF-8
+Ta aplikacja zostaÅ‚a zaprojektowana z myÅ›lÄ… o kaÅ¼dej klawiaturze,
+ktÃ³ra ma dodatkowe klawisze normalnie nieprzydatne w systemie X Window
 (np. klawisze multimedialne).
 
-Za pomoc± xhkeys mo¿na przypisaæ jedn± z poni¿szych czynno¶ci do
+Za pomocÄ… xhkeys moÅ¼na przypisaÄ‡ jednÄ… z poniÅ¼szych czynnoÅ›ci do
 dowolnego klawisza lub kombinacji klawiszy:
 - operacja wbudowana (np. przechodzenie po oknach)
-- wywo³anie zewnêtrznej aplikacji
-- wywo³ywanie w³asnego modu³u (wtyczki)
-- wys³anie zdarzenia klawiszowego do okre¶lonej aplikacji (symulacja
-  naci¶niêcia/puszczenia klawisza)
-- wys³anie zdarzenia myszy do okre¶lonej aplikacji (symulacja
-  wci¶niêcia/puszczenia przycisku)
+- wywoÅ‚anie zewnÄ™trznej aplikacji
+- wywoÅ‚ywanie wÅ‚asnego moduÅ‚u (wtyczki)
+- wysÅ‚anie zdarzenia klawiszowego do okreÅ›lonej aplikacji (symulacja
+  naciÅ›niÄ™cia/puszczenia klawisza)
+- wysÅ‚anie zdarzenia myszy do okreÅ›lonej aplikacji (symulacja
+  wciÅ›niÄ™cia/puszczenia przycisku)
 
 Cechy:
 - OSD
-- ci±g³e wywo³anie wtyczki (np. do monitorowania pozycji na ¶cie¿ce
+- ciÄ…gÅ‚e wywoÅ‚anie wtyczki (np. do monitorowania pozycji na Å›cieÅ¼ce
   audio CD)
 
-Pakiet zawiera narzêdzie do konfiguracji.
+Pakiet zawiera narzÄ™dzie do konfiguracji.
 
 %prep
 %setup -q
